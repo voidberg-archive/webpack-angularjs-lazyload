@@ -7,7 +7,7 @@ This is a simple example that shows how you can use Webpack's code splitting wit
 
 It's only loading the module code and the CSS but templates can be lazy loaded via a `templateProvider` as well, e.g.:
 
-```
+```js
 templateProvider: ['$q', function($q) {
   var deferred = $q.defer();
 
@@ -38,7 +38,7 @@ templateProvider: ['$q', function($q) {
 
 * Webpack's UglifyJsPlugin breaks the lazyloading code. To get around this you either need to disable mangling or add `$q` and `$ocLazyLoad` to the mangle exception list, like so:
 
-```
+```js
 new webpack.optimize.UglifyJsPlugin({
   minimize: true,
   warnings: false,
