@@ -4,7 +4,7 @@
   "description": "Simple example on how to use Webpack, Angular and ocLazyLoad.",
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/voidberg/webpack-angular-lazyload.git"
+    "url" : "https://github.com/voidberg/webpack-angularjs-lazyload.git"
   },
   "scripts": {
     "start": "webpack-dev-server --content-base=build --history-api-fallback --progress"
