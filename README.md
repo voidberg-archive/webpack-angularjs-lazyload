@@ -5,7 +5,7 @@ Simple example on how to use Webpack, Angular and ocLazyLoad.
 
 This is a simple example that shows how you can use Webpack's code splitting with AngularJS and ocLazyLoad. ocLazyLoad is not used to load the code but rather notify AngularJS that a new module has been loaded.
 
-It's only loading the module code but the templates can be lazy loaded via a `templateProvider` as well, e.g.:
+It's only loading the module code and the CSS but templates can be lazy loaded via a `templateProvider` as well, e.g.:
 
 ```
 templateProvider: ['$q', function($q) {
